@@ -76,7 +76,6 @@
                             <inputDirectory>${report.directory}</inputDirectory>
                             <jsonFiles>*.json</jsonFiles>
                             <outputDirectory>${report.directory}</outputDirectory>
-                            <setSkippedAsNotFailing>false</setSkippedAsNotFailing>
                         </configuration>
                     </execution>
                 </executions>
