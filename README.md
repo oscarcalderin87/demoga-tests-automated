@@ -17,7 +17,7 @@ Firefox (latest version)
 ## Execution with report
 `mvn clean test verify`
 
-An HTML file named overview-features.html is generated into the report folder
+An HTML file named overview-features.html is generated in report/cucumber-html-reports
 
 ## Notes
 Additionally, you can run both commands adding the parameters `-Dheadless=[true or false]` and `-Dbrowser=[CHROME or FIREFOX]`.
