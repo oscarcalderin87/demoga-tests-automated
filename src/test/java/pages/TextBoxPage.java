@@ -36,7 +36,7 @@ public class TextBoxPage extends BasePage {
         driver.findElement(inputEmailBy).sendKeys(userEmail);
         driver.findElement(textAreaCurrentAddressBy).sendKeys(currentAddress);
         driver.findElement(textAreaPermanentAddressBy).sendKeys(permanentAddress);
-        driver.findElement(buttonSubmitId).click();
+        clickElement(driver.findElement(buttonSubmitId));
     }
 
     public boolean outputDataIsDisplayed() {

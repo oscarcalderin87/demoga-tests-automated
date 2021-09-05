@@ -1,9 +1,6 @@
 package framework.utils;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.NoSuchElementException;
@@ -21,5 +18,16 @@ public class SeleniumUtils {
         WebElement element = driver.findElement(elementBy);
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
         jsExecutor.executeScript("arguments[0].style.border='2px solid red'", element);
+    }
+
+    public static void clickElement(final WebDriver driver, final WebElement element) {
+        try {
+            element.click();
+        }
+        catch (ElementClickInterceptedException e) {
+            JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+            jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
+            element.click();
+        }
     }
 }

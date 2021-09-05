@@ -19,4 +19,8 @@ public class BasePage {
     public void highlightElement(final By elementBy) {
         SeleniumUtils.highlightElement(this.driver, elementBy);
     }
+
+    public void clickElement(final WebElement element) {
+        SeleniumUtils.clickElement(this.driver, element);
+    }
 }
