@@ -25,3 +25,5 @@ Additionally, you can run both commands adding the parameters `-Dheadless=[true 
 The values false and CHROME are used by default.
 
 Ex: `mvn -Dheadless=true -Dbrowser=FIREFOX clean test`
+
+Also, you can see the execution of the automated tests after every push on the main branch clicking on the tab Actions
