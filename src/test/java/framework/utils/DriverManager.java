@@ -12,8 +12,6 @@ import static framework.utils.Utils.applyDefaultIfMissing;
 
 public class DriverManager {
     private static ThreadLocal<WebDriver> sharedDriver = new ThreadLocal<>();
-//    private static final GetProperties properties = new GetProperties();
-//    private static final String browser = properties.getString("browser").toUpperCase();
     private static final String browser = applyDefaultIfMissing(System.getProperty("browser"),
         "CHROME");
     private static final int IMPLICIT_TIMEOUT = 20;

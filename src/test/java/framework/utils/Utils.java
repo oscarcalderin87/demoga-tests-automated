@@ -11,7 +11,6 @@ public class Utils {
             argument = defaultValue;
             LOGGER.log(Level.INFO, "Default " + defaultValue + " execution was applied since was not provided");
         }
-
         return argument;
     }
 }
