@@ -37,7 +37,7 @@ public class Hooks {
                 LOGGER.log(Level.SEVERE, "Error taking screenshot");
                 LOGGER.log(Level.SEVERE, e.getMessage());
             }
-            testContext.getWebDriverManager().quitDriver();
         }
+        testContext.getWebDriverManager().quitDriver();
     }
 }
