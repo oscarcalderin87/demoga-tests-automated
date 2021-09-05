@@ -19,6 +19,7 @@ Firefox (latest version)
 
 An HTML file named overview-features.html is generated into the report folder
 
+## Notes
 Additionally, you can run both commands adding the parameters `-Dheadless=[true or false]` and `-Dbrowser=[CHROME or FIREFOX]`.
 
 The values false and CHROME are used by default.
