@@ -30,5 +30,11 @@ jobs:
         cache: maven
     - name: Running Automated Tests
       run: mvn -B clean test verify -Dheadless=true --file pom.xml
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: Tests Automated Report
+        path: report/cucumber-html-reports/
+        if-no-files-found: error
       
 
