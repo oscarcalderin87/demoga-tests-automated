@@ -5,6 +5,10 @@ Java (version 1.8 or higher)
 
 Maven (version 4 or higher)
 
+Chrome or Chromium (latest version)
+
+Firefox (latest version)
+
 # Running test cases
 
 ## Execution without report
