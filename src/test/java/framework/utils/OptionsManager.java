@@ -8,11 +8,17 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import static framework.utils.Utils.applyDefaultIfMissing;
+
 public class OptionsManager {
     public static ChromeOptions getChromeOptions() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-extensions");
+        if (Boolean.parseBoolean(applyDefaultIfMissing(System.getProperty("headless"),
+                "false"))) {
+            options.addArguments("--headless");
+        }
         options.addArguments("--ignore-certificate-errors");
         options.addArguments("--allow-insecure-localhost");
         options.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking",
