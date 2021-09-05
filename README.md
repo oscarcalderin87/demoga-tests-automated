@@ -1,11 +1,11 @@
 # demoga-tests-automated
 
-#Prerequisites
+# Prerequisites
 Java (version 1.8 or higher)
 
 Maven (version 4 or higher)
 
-#Running test cases
+# Running test cases
 
 ## Execution without report
 `mvn test`
