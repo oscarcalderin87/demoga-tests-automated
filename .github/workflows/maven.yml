@@ -32,6 +32,6 @@ jobs:
       run: mvn -B package --file pom.xml
       
     - name: Running Automated Tests
-      run: mvn -B package --file pom.xml
+      run: mvn -B package -Dheadless=true --file pom.xml
       
 
