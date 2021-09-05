@@ -66,7 +66,7 @@ public class TextBoxPage extends BasePage {
     }
 
     public String getPermanentAddress() {
-        return driver.findElement(outputPermanentAddressId).getText().replace("Permananet Address :", "");
+        return driver.findElement(outputPermanentAddressId).getText().replace("Permanent Address :", "");
     }
 
 }
