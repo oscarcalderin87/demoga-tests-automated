@@ -17,9 +17,9 @@ public class GetProperties {
         try {
             prop.load(in);
         }catch(FileNotFoundException e){
-            LOGGER.log(Level.SEVERE,"The property file was not found");
+            LOGGER.log(Level.SEVERE, "The property file was not found");
         }catch (IOException e) {
-            LOGGER.log(Level.SEVERE,"Can not read the property file");
+            LOGGER.log(Level.SEVERE, "Can not read the property file");
         }
     }
 
