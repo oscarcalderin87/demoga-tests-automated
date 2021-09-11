@@ -3,7 +3,7 @@ package framework.context;
 import framework.utils.DriverManager;
 
 public class TestContext {
-    protected DriverManager driverManager;
+    private DriverManager driverManager;
 
     public TestContext(){
         driverManager = new DriverManager();
